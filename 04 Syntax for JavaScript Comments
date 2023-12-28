@@ -1,0 +1,11 @@
+// You can put anything you want here. en una sola línea
+
+console.log('Hi there'); // Here is another comment
+
+/*, en varias líneas
+Anything
+you want
+here
+*/
+
+//de estas maneras, el interprete reconoce como comentario, y lo ignora
