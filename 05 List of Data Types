@@ -1,0 +1,22 @@
+// Boolean
+var truthy = true;
+var notTruthy = false;
+console.log(truthy); //true
+
+// Null (vacio, si declarado)
+var nully = null;
+
+// Undefined
+var notDefined;
+
+// Number
+var age = 12;
+
+// String
+var name = "Kristine";
+var nameTwo = 'Jordan';
+
+/* Symbol. es nuevo enES6. similar a cadenas pero no puede ser cambiado. 
+para funciones de tipo mas avanzado
+*/
+var mySym = Symbol('foo');
