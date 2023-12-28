@@ -1,0 +1,19 @@
+var user = {
+  name: 'Kristine',
+  age: 12,
+  city: 'Scottsdale',
+  grades: {
+    math: 90,
+    science: 80,
+    languageArts: 100
+  }
+}
+user.age = 13;
+user.grades.coding = 95;
+
+/* JavaScript está diseñado en un paradigma simple basado en objetos.
+Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor. 
+El valor de una propiedad puede ser una función, en cuyo caso la propiedad es conocida como un método. 
+Además de los objetos que están predefinidos en el navegador, puedes definir tus propios objetos. 
+los valores se separan por comas, y se ordenan en sangrados en diferentes lineas. definidos por {}. También pueden anidar otros objetos
+*/
