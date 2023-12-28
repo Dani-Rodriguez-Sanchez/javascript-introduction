@@ -1,0 +1,31 @@
+//var tiene un ámbito local cuando se declara dentro de una función. 
+Esto significa que está disponible y solo se puede acceder a ella dentro de esa función.
+Se pueden volver a declarar y modificar. funciona como un contenedor temporal.
+
+var age = 12;
+console.log(age);
+
+var age = 15; // yep!
+console.log(age);
+
+//let no se puede redefinir. let puede modificarse pero no volver a declararse.
+Al igual que var,  una variable declarada con let puede ser actualizada dentro de su ámbito. 
+A diferencia de var, una variable let no puede ser re-declarada dentro de su ámbito.
+
+let age = 12;
+console.log(age);
+
+let age = 15; // nope!
+console.log(age);
+
+//Const
+Las variables declaradas con const mantienen valores constantes.
+Las declaraciones const similitudes con las declaraciones let.
+
+Las declaraciones const tienen un ámbito de bloque
+Al igual que las declaraciones let, 
+solamente se puede acceder a las declaraciones const dentro del bloque en el que fueron declaradas.
+
+const no puede modificarse ni volver a declararse
+Esto significa que el valor de una variable declarada con const s el mismo dentro de su ámbito. 
+No se puede actualizar ni volver a declarar. 
