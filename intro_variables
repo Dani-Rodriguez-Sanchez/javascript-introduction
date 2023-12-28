@@ -1,0 +1,9 @@
+var name, city, age;
+name = 'Kristine';
+city = 'Scottsdale';
+age = 12;
+console.log(age);
+console.log(name);
+console.log(city);
+
+alert(name); /da un mensaje en una ventana emergente, con un boton de ok
