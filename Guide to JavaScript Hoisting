@@ -1,0 +1,10 @@
+// Hoisted. hoisting te permite usar funciones y variables antes de que se hayan declarado
+name = 'Kristine';
+console.log(name); // 'Kristine'
+var name;
+
+// Initializers not hoisted
+console.log(age); // undefined
+var age = 33;
+
+//la mejor práctica es enumerar siempre sus variables en le parte superior. 
