@@ -1,0 +1,30 @@
+"100" + 42; // "10042"
+42 + "100"; // "42100"
+// no realiza una suma, si no que añade un string a otro
+
+"100" - 42; // 58
+100 + null; // 100
+
+var ageOne = 12;
+String(ageOne); // '12'
+ageOne.toString(); // '12'
+// combierte un numero a string
+
+var ageTwo = '33';
+Number(ageTwo); // 33
+parseInt(ageTwo); // 33
+// combierte numero a entero
+
+parseFloat(ageTwo); // 33
++ ageTwo; // 33
+//combierte numero a decimal
+
+parseInt('5555555555 is my phone number'); // 5555555555
+parseInt('foo 5555555555 is my phone number'); // NaN (not a number)
+
+Number("100") + 42; // 142
+//aunque es una string, lo considera numero
+
+Number(true); // 1
+Number(false); // 0
+//por defecto, 1 es true y 0 falso
