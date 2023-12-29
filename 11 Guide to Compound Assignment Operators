@@ -1,0 +1,17 @@
+//operadores de asignacion compuestos
+
+var name = 'Tiffany';
+
+var sum = 0;
+
+var gradeOne = 100;
+
+var gradeTwo = 80;
+
+sum += gradeOne; // 100--->sum = sum + gradeOne
+
+sum; // 100
+
+sum += gradeTwo; // 180----> igual que sum = sum + gradeTwo
+
+sum *= gradeTwo; // 14400
