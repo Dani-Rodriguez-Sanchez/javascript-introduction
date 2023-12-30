@@ -1,0 +1,9 @@
+//cómo utilizar argumentos/parámetros de funciones en javaScript. y cómo definir valores predeterminados para los argumentos de funciones.
+function fullName(firstName, lastName, language) {
+    var language = language || 'English';
+    return lastName.toUpperCase() + ", " + firstName.toUpperCase() + " - " + language;
+}
+
+console.log(fullName('Jordan', 'Hudgens', 'Spanish'));
+
+//asi usa como lenguaje por defecto english, en caso que no se defina.
