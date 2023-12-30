@@ -1,0 +1,19 @@
+//diferencias entre el alcance local y global para las variables de JavaScript
+//es muy importante poner VAR o LET cada vez que declaras una variable, ya que, si no, accidentalmente puedes crear una variable global
+
+
+var userObj = {
+  email: 'sample@example.com',
+  fullName: 'Kristine Hudgens'
+}
+
+function dashboardGreeting() {
+  var userObj = {
+    email: 'sample2@example.com',
+    fullName: 'Jordan Hudgens'
+  }
+  console.log("Hi there, ".concat(userObj.fullName));
+}
+
+dashboardGreeting();
+console.log(userObj.fullName);
