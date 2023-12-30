@@ -2,6 +2,8 @@ function hiThere () {
     console.log('Hi there');
 } 
 //no saca nada, por que solo define la funcion VOID FUNCTION
+//Return se puede usar para meter datos en variables
+//console.log solo sirve para presentarlos en la consola sin posibilidad de usarlos para otra cosa
 
 hiThere(); // Hi there
 
