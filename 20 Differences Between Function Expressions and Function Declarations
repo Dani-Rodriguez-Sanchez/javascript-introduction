@@ -19,6 +19,11 @@ if (age <= 10) {
     return "Wrong Kids' Menu";
   }
 
+console.log(buildMenu()); 
+} //"Menú infantil"
+
+//Ahora tenemos un error que dice que las declaraciones de funciones no deben colocarse en bloques. Y cuando se refieren a bloques, se refieren a dentro de llaves en cosas como un bloque condicional o try-catch o algo así. Y eso es exactamente lo que estamos tratando de hacer: estamos tratando de generar una función sobre la marcha y eso no es para lo que estaban destinadas las declaraciones de función, sino para lo que estaba destinada una expresión de función.
+
   console.log(buildMenu());
   console.log(wrongMenuBuilder());
 }
