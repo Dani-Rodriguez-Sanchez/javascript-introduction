@@ -1,0 +1,13 @@
+//cómo se puede aprovechar el bucle for-in para recorrer un objeto JavaScript.
+
+var student = {
+  name: 'Kristine',
+  age: 12,
+  city: 'Scottsdale'
+};
+
+for (var key in student) {
+  console.log(key + " => " + student[key]);
+}
+
+/KEY funciona diferente si es una funcion o una llamada de atributo
