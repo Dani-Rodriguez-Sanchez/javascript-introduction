@@ -15,16 +15,18 @@ mixedArray[3].name; // "Kristine"
 ------------------------------
 var arr = ['Altuve', 'Bregman', 'Correa', 'Springer'];
 
-arr.pop(); // "Springer"
+arr.length; // 4 -->en JS lenght es una propiedad, no una funcion(como funcion se le llamaria array.lenght()
+
+arr.pop(); // "Springer" -->elimina un elemento del final POP
 
 arr; // ['Altuve', 'Bregman', 'Correa']
 
-arr.push('Bagwell'); // 4
+arr.push('Bagwell'); // 4 --> añade un elemento al finalPUSH
 
 arr; // ['Altuve', 'Bregman', 'Correa', 'Bagwell']
 
-arr.shift(); // ['Bregman', 'Correa', 'Bagwell']
+arr.shift(); // ['Bregman', 'Correa', 'Bagwell'] -->elimina un elemento del principio SHIFT
 
 arr.unshift('Kyle'); // 4
 
-arr; // ['Kyle', 'Bregman', 'Correa', 'Bagwell']
+arr; // ['Kyle', 'Bregman', 'Correa', 'Bagwell']-->agrega elemento al princio UNSHIFT
