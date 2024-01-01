@@ -1,0 +1,30 @@
+//arrays un, es una colección. Por lo tanto, le brinda la posibilidad de almacenar una colección de datos. Entonces, mientras que con a standard variable, digamos que cuando almacena un stringnombre similar que es solo un objeto de datos, es una sola cadena.
+
+var generatedArray = new Array(3); // [undefined, undefined, undefined]
+
+var literalArray = [1, 2, 3];
+//-->array literal syntax, es la manera mas común
+
+var mixedArray = ['Hi', 1, ['a', 'b', 'c'], { name: 'Kristine' }];
+//puedes mezclar y combinar los elementos de los tipos de datos dentro de tus arrays
+
+mixedArray[3]; // Object {name: "Kristine"}
+
+mixedArray[3].name; // "Kristine"
+
+------------------------------
+var arr = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+arr.pop(); // "Springer"
+
+arr; // ['Altuve', 'Bregman', 'Correa']
+
+arr.push('Bagwell'); // 4
+
+arr; // ['Altuve', 'Bregman', 'Correa', 'Bagwell']
+
+arr.shift(); // ['Bregman', 'Correa', 'Bagwell']
+
+arr.unshift('Kyle'); // 4
+
+arr; // ['Kyle', 'Bregman', 'Correa', 'Bagwell']
