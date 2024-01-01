@@ -1,0 +1,29 @@
+//creacion de un motor de autorización combinando objetos, cierres y la palabra clave "this".
+//verifica si el usuario que ve es un usuario pago o si es un usuario gratuito y, si es un usuario pago, mostrará el contenido
+
+var guide = {
+  title: 'Guide to Programming',
+  content: 'Content goes here...',
+  visibleToUser: function (viewingUserRole) {
+    if (viewingUserRole === 'paid') {
+      return true;
+    }
+  },
+  
+  //Ahora vamos a crear un método para representar el contenido. Entonces lo llamamos renderContent. Esto asumirá un rol de usuario y luego, dentro de esto, construiremos nuestro sistema.
+  //Necesitamos decir this.visibleToUser porque necesita saber la instancia exacta a la que nos referimos. Si solo decimos esta función genérica amplia visibleToUser, revisaremos el espacio de nombres global y verificaremos si hay una función visibleToUser.
+  
+  renderContent: function(userRole) {
+    if (this.visibleToUser(userRole)) {
+      console.log(this.title + " - " + this.content);
+    } else {
+      this.content = '';
+      console.log(this.title + " - " + this.content);
+    }
+  }
+}
+
+user = { role: 'paid' };
+guide.renderContent(user.role);
+
+//resulta muy útil cuando se trata de poder encapsular y organizar nuestro código correctamente porque no tenemos que preocuparnos de intentar pasar toda esa lógica aquí.
