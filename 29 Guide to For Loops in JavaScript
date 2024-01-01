@@ -1,0 +1,26 @@
+//3 TIPOS DE BUCLES FOR: FOR tradicionales, FOR IN, FOR EACH
+var players = [
+  'Altuve',
+  'Bregman',
+  'Correa',
+  'Springer'
+];
+
+//FOR IN
+for (player in players) {
+  console.log(players[player]);
+}
+//-->la convencion es ponerlo en singular. player representa el index en este caso
+// hacemos el bucle tantas veces como elementos hay en la coleccion
+
+//FOR
+for (var i = 0; i < players.length; i++) {
+  console.log(players[i]);
+}
+//La sintaxis será for y luego dentro de esto tenemos que poner una expresión completa. Tenemos que declarar tres cosas: primero, tenemos que declarar una variable que se usará durante todo el ciclo, luego tenemos que declarar una condición, lo que significa que queremos que sigas haciendo el ciclo hasta que no se cumpla esta condición y luego la última. uno es algún tipo de incrementador.
+
+//FOREACH
+players.forEach(function(element) {
+  console.log(element);
+});
+//el mas moderno. es mucho mas funcional
