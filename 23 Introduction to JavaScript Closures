@@ -1,0 +1,31 @@
+//CIERRES DE JS
+//un cierre es poder resumir un conjunto completo de comportamiento y 
+//generalmente envolverlo en una función y poder usarlo, pasarlo y 
+//llamarlo como sea necesario.
+
+
+//ejemplo de como devolver cierres de una funcion:
+//promedio de bateo:
+
+function battingAverage () {
+  var hits = 100;
+  var atBats = 300;
+//establece una variable local
+//y crea dos cierres, uno para promedio actual, y el siguiente para actualizarlo
+//Siempre que tenga un objeto y tenga funciones declaradas o definidas dentro de ese objeto javascript, esas funciones se denominan técnicamente métodos  
+  return {
+    getCurrentAverage: function () {
+      return (hits/atBats);
+    },
+    updateHitsAndAtBats: function (hit, atBat) {
+      hits += hit;
+      atBats += atBat;
+    }
+  }
+}
+//Creamos esta variable altuve. Y estamos almacenando la variable battingAverage de la función dentro de eso, por eso.
+//Debido a que devuelve un objeto, podemos usar el tipo de recorrido de punto de objeto. Entonces podemos llamar a altuve.getCurrentAverage así.
+var altuve = battingAverage();
+console.log(altuve.getCurrentAverage());
+altuve.updateHitsAndAtBats(0, 20);
+console.log(altuve.getCurrentAverage());
