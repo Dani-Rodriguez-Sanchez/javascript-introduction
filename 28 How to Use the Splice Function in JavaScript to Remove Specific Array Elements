@@ -1,0 +1,18 @@
+//función de empalme en JavaScript para eliminar elementos en ubicaciones específicas de una matriz.
+//SPLICE
+
+var arr = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+//para eliminar correa, averiguamos en q posicion está
+var foundElement = arr.indexOf('Correa');
+
+foundElement; // 2
+
+arr.splice(foundElement, 1); // ["Correa"]
+//lo que devuelve es un array de longitud 1
+
+arr; // ["Altuve", "Bregman", "Springer"]
+
+arr.splice(1, 2); // ["Bregman", "Springer"]
+//empalme de matriz y luego se necesitan dos argumentos. El primero es el índice y el siguiente argumento es cuántos elementos queremos eliminar
+
+arr; // ["Altuve"]
