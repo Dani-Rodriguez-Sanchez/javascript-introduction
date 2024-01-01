@@ -1,0 +1,5 @@
+//cómo aprovechar las funciones integradas de JavaScript para modificar el contenido de un sitio web
+//*dentro de CONSOLE del navegador
+
+document.getElementsByClassName('b1')[0].innerHTML = 'Hi there';
+//busca los elementos con clase b1, en la posicion 0, y lo modifica por nuestro texto
