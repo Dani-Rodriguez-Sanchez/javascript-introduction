@@ -1,0 +1,22 @@
+//garantiza que se utilizará al menos una vez
+
+var players = [
+  'Altuve',
+  'Bregman',
+  'Correa',
+  'Springer'
+];
+
+//WHILE (la condicion se comprueba antes de la iteración)
+var i = 0; //-->variable iteradora, la declaramos fuera del bucle
+while (i < players.length) {
+  console.log(players[i]); //-->aqui la i funciona como index
+  i++;//--> incrementador
+}
+
+//DO WHILE (la condicion se comprueba despues de la iteracion)
+var i = 21;
+do {
+  console.log(players[i]);
+  i++;
+} while (i < players.length)
